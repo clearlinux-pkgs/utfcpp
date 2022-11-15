@@ -4,7 +4,7 @@
 #
 Name     : utfcpp
 Version  : 3.2.2
-Release  : 6
+Release  : 7
 URL      : https://github.com/nemtrif/utfcpp/archive/v3.2.2/utfcpp-3.2.2.tar.gz
 Source0  : https://github.com/nemtrif/utfcpp/archive/v3.2.2/utfcpp-3.2.2.tar.gz
 Summary  : No detailed summary available
