@@ -4,7 +4,7 @@
 #
 Name     : utfcpp
 Version  : 3.2.2
-Release  : 7
+Release  : 8
 URL      : https://github.com/nemtrif/utfcpp/archive/v3.2.2/utfcpp-3.2.2.tar.gz
 Source0  : https://github.com/nemtrif/utfcpp/archive/v3.2.2/utfcpp-3.2.2.tar.gz
 Summary  : No detailed summary available
@@ -22,8 +22,8 @@ C++ developers miss an easy and portable way of handling Unicode encoded strings
 Summary: dev components for the utfcpp package.
 Group: Development
 Provides: utfcpp-devel = %{version}-%{release}
-Provides: utf8cpp-dev = %{version}-%{release}
 Requires: utfcpp = %{version}-%{release}
+Provides: utf8cpp-dev = %{version}-%{release}
 
 %description dev
 dev components for the utfcpp package.
@@ -46,7 +46,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1668550730
+export SOURCE_DATE_EPOCH=1668552267
 mkdir -p clr-build
 pushd clr-build
 export GCC_IGNORE_WERROR=1
@@ -62,7 +62,7 @@ make  %{?_smp_mflags}
 popd
 
 %install
-export SOURCE_DATE_EPOCH=1668550730
+export SOURCE_DATE_EPOCH=1668552267
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/utfcpp
 cp %{_builddir}/utfcpp-%{version}/LICENSE %{buildroot}/usr/share/package-licenses/utfcpp/3cba29011be2b9d59f6204d6fa0a386b1b2dbd90
