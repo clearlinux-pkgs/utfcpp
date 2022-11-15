@@ -22,6 +22,7 @@ C++ developers miss an easy and portable way of handling Unicode encoded strings
 Summary: dev components for the utfcpp package.
 Group: Development
 Provides: utfcpp-devel = %{version}-%{release}
+Provides: utf8cpp-dev = %{version}-%{release}
 Requires: utfcpp = %{version}-%{release}
 
 %description dev
