@@ -4,10 +4,10 @@
 # Using build pattern: cmake
 #
 Name     : utfcpp
-Version  : 3.2.4
-Release  : 9
-URL      : https://github.com/nemtrif/utfcpp/archive/v3.2.4/utfcpp-3.2.4.tar.gz
-Source0  : https://github.com/nemtrif/utfcpp/archive/v3.2.4/utfcpp-3.2.4.tar.gz
+Version  : 3.2.5
+Release  : 10
+URL      : https://github.com/nemtrif/utfcpp/archive/v3.2.5/utfcpp-3.2.5.tar.gz
+Source0  : https://github.com/nemtrif/utfcpp/archive/v3.2.5/utfcpp-3.2.5.tar.gz
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : BSL-1.0
@@ -42,15 +42,15 @@ license components for the utfcpp package.
 
 
 %prep
-%setup -q -n utfcpp-3.2.4
-cd %{_builddir}/utfcpp-3.2.4
+%setup -q -n utfcpp-3.2.5
+cd %{_builddir}/utfcpp-3.2.5
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1692052158
+export SOURCE_DATE_EPOCH=1695658656
 mkdir -p clr-build
 pushd clr-build
 export GCC_IGNORE_WERROR=1
@@ -83,7 +83,7 @@ make  %{?_smp_mflags}
 popd
 
 %install
-export SOURCE_DATE_EPOCH=1692052158
+export SOURCE_DATE_EPOCH=1695658656
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/utfcpp
 cp %{_builddir}/utfcpp-%{version}/LICENSE %{buildroot}/usr/share/package-licenses/utfcpp/3cba29011be2b9d59f6204d6fa0a386b1b2dbd90 || :
