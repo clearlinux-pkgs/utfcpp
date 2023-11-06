@@ -6,10 +6,10 @@
 # autospec commit: 250a666
 #
 Name     : utfcpp
-Version  : 4.0.1
-Release  : 12
-URL      : https://github.com/nemtrif/utfcpp/archive/v4.0.1/utfcpp-4.0.1.tar.gz
-Source0  : https://github.com/nemtrif/utfcpp/archive/v4.0.1/utfcpp-4.0.1.tar.gz
+Version  : 4.0.2
+Release  : 13
+URL      : https://github.com/nemtrif/utfcpp/archive/v4.0.2/utfcpp-4.0.2.tar.gz
+Source0  : https://github.com/nemtrif/utfcpp/archive/v4.0.2/utfcpp-4.0.2.tar.gz
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : BSL-1.0
@@ -53,15 +53,15 @@ license components for the utfcpp package.
 
 
 %prep
-%setup -q -n utfcpp-4.0.1
-cd %{_builddir}/utfcpp-4.0.1
+%setup -q -n utfcpp-4.0.2
+cd %{_builddir}/utfcpp-4.0.2
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1698687066
+export SOURCE_DATE_EPOCH=1699290956
 mkdir -p clr-build
 pushd clr-build
 export GCC_IGNORE_WERROR=1
@@ -120,7 +120,7 @@ FFLAGS="$CLEAR_INTERMEDIATE_FFLAGS"
 FCFLAGS="$CLEAR_INTERMEDIATE_FCFLAGS"
 ASFLAGS="$CLEAR_INTERMEDIATE_ASFLAGS"
 LDFLAGS="$CLEAR_INTERMEDIATE_LDFLAGS"
-export SOURCE_DATE_EPOCH=1698687066
+export SOURCE_DATE_EPOCH=1699290956
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/utfcpp
 cp %{_builddir}/utfcpp-%{version}/LICENSE %{buildroot}/usr/share/package-licenses/utfcpp/3cba29011be2b9d59f6204d6fa0a386b1b2dbd90 || :
